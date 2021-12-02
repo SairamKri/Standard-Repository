@@ -1,0 +1,15 @@
+a=10
+print(id(a))
+def something():
+    a=9
+
+  x=globals()['a']  ............................To acesss all the global variables.
+  print(id(x))
+  print("in func:",a)
+
+    globals()['a']=15 ..........................Changing the value of global variable 
+
+
+something()
+
+print("otuside",a)
